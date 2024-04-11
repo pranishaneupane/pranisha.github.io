@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pranisha's Webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Background Image-->
+
+<body style="background: linear-gradient(rgba(0, 0, 0, 0.5), #2F4858), url(Images/Background.jpg); 
+            background-size: cover; background-position: center;">
+
+    <!-- Heading and Intro and exlore Page 1-->
+    <section id="homepage">
+        <div class="logo">Pranisha's Page</div>
+
+        <div class="heading-intro">
+            <h1>Foods I Like</h1>
+            <p>Hi!! I am Pranisha but sometimes people just shorten it to Pransa and so can you. <br>Anyhoo, I will share six of my comfort foods with you guys today. Watch out for your favorite ones too ;)</p>
+        </div>
+
+    </section>
+
+    <div class="exp-button">
+        <a href="#foods">Explore with me</a>
+    </div>
+
+    <!-- Logo and Navigation bar - Page 1-->
+    <div id="navBar">
+        <nav>
+            <ul>
+                <li> <a class="active" href="about.html">About</a> </li>
+                <li> <a class="active" href="food.html">Foods</a> </li>
+                <li><a href="https://www.linkedin.com/in/pranisha-neupane/">Contact Me</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- To make navigation Bar responsive - Page 1 More in scripts-->
+    <div id="menuButton">
+        <img src="Images/Nav Bar Button.png" id="menu">
+    </div>
+
+    <!-- To make navigation Bar responsive - Page 1 Scripts-->
+    <script>
+        var menuButton = document.getElementById("menuButton")
+        var navBar = document.getElementById("navBar")
+        var menu = document.getElementById("menu")
+
+        navBar.style.right = "-250px";
+
+        menuButton.onclick = function() {
+            if (navBar.style.right == "-250px") {
+                navBar.style.right = "0";
+                menu.src = "Images/Close Nav Bar.png";
+            } else {
+                navBar.style.right = "-250px";
+                menu.src = "Images/Nav Bar Button.png";
+            }
+        }
+    </script>
+
+    <!-- Foods and Images - Page 2 -->
+    <section id="foods">
+        <div class="foods-text">
+            <p>Let's take a look at the foods</p>
+        </div>
+
+        <div class="images-container">
+            <div class="food-image">
+                <img src="Images/Daal-bhaat.png" alt="Daal-bhaat">
+                <div class="image-text">
+
+                    <h2>Daal-bhaat</h2>
+                    <hr>
+                    <p>Daal-bhaat is the national dish of Nepal. Daal is lentil soup and Bhaat is rice, together they make the best comfort food known to every Nepali out there.</p>
+
+                </div>
+            </div>
+
+            <div class="food-image">
+                <img src="Images/Momo.png" alt="Momo">
+                <div class="image-text">
+
+                    <h2>Mo:Mo</h2>
+                    <hr>
+                    <p>Mo:Mo is a dumpling with Nepali papa and Tibetan mama. From street foods to high-end restaurants, it is a staple and a way of life.</p>
+
+                </div>
+            </div>
+
+            <div class="food-image">
+                <img src="Images/Ramen.png" alt="Ramen">
+                <div class="image-text">
+
+                    <h2>Ramen</h2>
+                    <hr>
+                    <p>Nothing can go wrong with a nice bowl of ramen. If you're a pro - make it fancy, if you're not - have it your way. It's yummy both ways.</p>
+
+                </div>
+            </div>
+
+            <div class="food-image">
+                <img src="Images/Fried-Chicken.png" alt="Fried-Chicken">
+                <div class="image-text">
+
+                    <h2>Fried Chicken</h2>
+                    <hr>
+                    <p>What's tastier than a double fried, thick battered, crip exterior and juicy fried chicken? Nothing comes to mind. Let's not look at calories for a second here ;)</p>
+                </div>
+            </div>
+
+            <div class="food-image">
+                <img src="Images/Naan.png" alt="Naan">
+                <div class="image-text">
+
+                    <h2>Naan</h2>
+                    <hr>
+                    <p>Naan is that one extremely social friend who gets along with everyone yet only hangs out with butter chicken. And it's good even without a pair.</p>
+
+                </div>
+            </div>
+
+            <div class="food-image">
+                <img src="Images/Brownie.png" alt="Brownie">
+                <div class="image-text">
+
+                    <h2>Brownie</h2>
+                    <hr>
+                    <p>If I could bake, I'd make 100 brownies and manage to eat them within a single day. My 9-year-old cousin nicknamed me 'Prownie' because it rhymes with brownie. They're both sweet
+                        <3</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>Special thanks to Freepik for the images used, GreatStack for handy YouTube tutorials, ChatGPT for correcting me when my codes got messy, and all my professors for this challenge and help along the way.<br> Peace Out &copy; Pranisha Neupane</p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#foods {
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+/* Basic styling for the anchor tag */
+
+.goBack-text {
+    margin-top: 20px;
+    margin-left: 1360px;
+}
+
+.goBack-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2f4858;
+    /* Background color */
+    color: #fff;
+    /* Text color */
+    text-decoration: none;
+    font-family: "Noto Sans Khojki", sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Hover effect */
+
+.goBack-text a:hover {
+    background-color: #253e4d;
+    /* Darker shade on hover */
+}
+
+
+/* Optional: Add a box shadow for depth */
+
+.goBack-text a {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Box shadow */
+}
+
+.logo {
+    color: #FFFFFF;
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: initial;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+.foods-text {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.foods-text h1 {
+    margin: auto;
+    font-family: "Noto Sans Khojki", sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.foods-text p {
+    margin: 10px;
+    font-family: "Noto Sans Khojki", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+
+
+/*--For food images container--*/
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+/*--For individual image container style--*/
+
+.food-image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #213744;
+}
+
+
+/*--For gradient overlay style--*/
+
+.food-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #2f4858);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/*--Shows overlay on hover--*/
+
+.food-image:hover::after {
+    opacity: 1;
+}
+
+
+/*--For individual image styles--*/
+
+.food-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+/*--For overall text when hovered--*/
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Noto Sans Khojki", sans-serif;
+    text-align: center;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/*--For image heading and description--*/
+
+.image-text h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.image-text p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+/*--For text on hover--*/
+
+.food-image:hover .image-text {
+    opacity: 1;
+}
+
+
+/*--For Footer--*/
+
+footer {
+    background-color: #9BAEBC;
+    font-family: "Noto Sans Khojki", sans-serif;
+    font-weight: bold;
+    color: #2F4858;
+    text-align: center;
+    padding: 30px;
+}
